@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:background="@color/colorPrimary"
+        android:id="@+id/namebar"
+        android:text="selfishlover"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:transcriptMode="alwaysScroll"
+        android:layout_below="@+id/namebar"
+        android:layout_above="@+id/sendbar"
+        android:id="@+id/messagelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+    <LinearLayout
+        android:id="@+id/sendbar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/message"
+            android:hint="请输入您要发送的消息"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/send"
+            android:text="发送"
+            android:background="@color/green"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
